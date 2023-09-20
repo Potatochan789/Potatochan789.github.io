@@ -1,0 +1,137 @@
+[
+    {
+        "link": "https://replay.pokemonshowdown.com/smogtours-gen9ou-666832",
+        "teams": {
+            "p1": {
+                "name": "lax",
+                "team": [
+                    "Great Tusk",
+                    "Corviknight, F",
+                    "Chi-Yu",
+                    "Rotom-Wash",
+                    "Gholdengo",
+                    "Iron Valiant"
+                ]
+            },
+            "p2": {
+                "name": "xavgb",
+                "team": [
+                    "Hatterene, F",
+                    "Chi-Yu",
+                    "Roaring Moon",
+                    "Ceruledge, M",
+                    "Torkoal, M",
+                    "Great Tusk"
+                ]
+            }
+        }
+    },
+    {
+        "link": "https://replay.pokemonshowdown.com/smogtours-gen9ou-666837",
+        "teams": {
+            "p1": {
+                "name": "xavgb",
+                "team": [
+                    "Quagsire, M",
+                    "Garganacl, M",
+                    "Gholdengo",
+                    "Toxapex, M",
+                    "Meowscarada, F",
+                    "Corviknight, M"
+                ]
+            },
+            "p2": {
+                "name": "lax",
+                "team": [
+                    "Iron Valiant",
+                    "Garchomp, M",
+                    "Gholdengo",
+                    "Garganacl, F",
+                    "Toxapex, F",
+                    "Great Tusk"
+                ]
+            }
+        }
+    },
+    {
+        "link": "https://replay.pokemonshowdown.com/smogtours-gen9ou-666838",
+        "teams": {
+            "p1": {
+                "name": "xavgb",
+                "team": [
+                    "Chi-Yu",
+                    "Slowking, M",
+                    "Maushold",
+                    "Iron Treads",
+                    "Toxapex, F",
+                    "Dragonite, F"
+                ]
+            },
+            "p2": {
+                "name": "lax",
+                "team": [
+                    "Talonflame, M",
+                    "Garganacl, M",
+                    "Great Tusk",
+                    "Rotom-Wash",
+                    "Magnezone",
+                    "Roaring Moon"
+                ]
+            }
+        }
+    },
+    {
+        "link": "https://replay.pokemonshowdown.com/smogtours-gen9ou-667090",
+        "teams": {
+            "p1": {
+                "name": "Guldkatt",
+                "team": [
+                    "Pawmot, F",
+                    "Dragonite, F",
+                    "Iron Treads",
+                    "Annihilape, F",
+                    "Chi-Yu",
+                    "Kingambit, M"
+                ]
+            },
+            "p2": {
+                "name": "xavgb",
+                "team": [
+                    "Rotom-Wash",
+                    "Garganacl, M",
+                    "Dragonite, M",
+                    "Kingambit, M",
+                    "Garchomp, M",
+                    "Chien-Pao"
+                ]
+            }
+        }
+    },
+    {
+        "link": "https://replay.pokemonshowdown.com/smogtours-gen9ou-667092",
+        "teams": {
+            "p1": {
+                "name": "Guldkatt",
+                "team": [
+                    "Indeedee, M",
+                    "Hatterene, F",
+                    "Garchomp, M",
+                    "Iron Valiant",
+                    "Cloyster, F",
+                    "Polteageist"
+                ]
+            },
+            "p2": {
+                "name": "xavgb",
+                "team": [
+                    "Hatterene, F",
+                    "Chi-Yu",
+                    "Roaring Moon",
+                    "Ceruledge, F",
+                    "Torkoal, M",
+                    "Great Tusk"
+                ]
+            }
+        }
+    }
+]
