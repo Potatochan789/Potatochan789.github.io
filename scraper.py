@@ -67,6 +67,7 @@ def get_all_replay_links(url: str):
             lastTitle = title
 
             links = soup.find_all("a", href=True)
+            
             for link in links:
                 if not ("https://replay.pokemonshowdown.com/smogtours-gen9ou" in link["href"] or "https://replay.pokemonshowdown.com/gen9ou" in link["href"]):
                     continue
@@ -86,7 +87,9 @@ links = []
 
 
 for url in urlList:
-    links = links + get_all_replay_links(url)
+    newLinks = get_all_replay_links(url)
+    while newLinks == []:
+        links = links + newLinks
 
 for x in links:
     print(x)
