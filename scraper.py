@@ -115,7 +115,7 @@ for link in tqdm(links, colour="green", desc="Fetching teams.."):
 # print(json.dumps(output))
 # print(output)
 
-f = open("C:/test.json", "w")
+f = open("test.json", "w")
 f.write(json.dumps(output))
 f.close()
 
