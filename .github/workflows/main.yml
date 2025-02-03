@@ -8,7 +8,7 @@ on:
     # To re-enable it, make a change to it (add 1 minute for example)
     # Cron formatting: https://crontab.cronhub.io/
     # Last person to change this: Richie Motorgeanu
-    - cron: "0 9 * * *"
+    - cron: "0 9 * * 1"
     
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
