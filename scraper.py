@@ -12,9 +12,9 @@ urlList = [
 ]
 
 def get_team_contents(url: str):
-    req = requests.get(f"{url}.log", allow_redirects=True, headers={
-        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36"
-    })
+    headers = {"User-Agent": "PostmanRuntime/7.32.3"}
+    driver = {"headers": [headers]}
+    req = requests.get(f"{url}.log", headers=headers)
 
     if req.status_code != 200:
         return None
