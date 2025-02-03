@@ -54,9 +54,9 @@ def get_all_replay_links(url: str):
     lastTitle = ""
     while True:
         try:
-            req = requests.get(url, allow_redirects=True, headers={
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36"
-            })
+            headers = {"User-Agent": "PostmanRuntime/7.32.3"}
+            driver = {"headers": [headers]}
+            req = requests.get(f"{url}.log", headers=headers)
 
 
             soup = BeautifulSoup(req.content, "html.parser")
