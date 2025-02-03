@@ -58,6 +58,7 @@ def get_all_replay_links(url: str):
             driver = {"headers": [headers]}
             req = requests.get(f"{url}.log", headers=headers)
 
+            print(req)
 
             soup = BeautifulSoup(req.content, "html.parser")
             
