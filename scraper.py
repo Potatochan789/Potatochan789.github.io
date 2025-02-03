@@ -58,7 +58,6 @@ def get_all_replay_links(url: str):
                 "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36"
             })
 
-            print(req)
 
             soup = BeautifulSoup(req.content, "html.parser")
             
@@ -89,10 +88,7 @@ links = []
 
 
 for url in urlList:
-    newLinks = get_all_replay_links(url)
-    while newLinks == []:
-        newLinks = get_all_replay_links(url)
-    links = links + newLinks
+    links = links + get_all_replay_links(url)
 
 for x in links:
     print(x)
