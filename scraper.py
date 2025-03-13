@@ -84,9 +84,7 @@ def get_all_replay_links(url: str):
         except:
             return correct_links
 
-
 links = []
-
 
 for url in urlList:
     links = links + get_all_replay_links(url)
@@ -95,32 +93,33 @@ for x in links:
     print(x)
 tqdm.write(f"Found {len(links)} links")
 
-output = []
-
-for link in tqdm(links, colour="green", desc="Fetching teams.."):
-    teamcontents = get_team_contents(link)
-
-    while teamcontents == {}:
-        time.sleep(0.5)
+if len(links) > 0:
+    output = []
+    
+    for link in tqdm(links, colour="green", desc="Fetching teams.."):
         teamcontents = get_team_contents(link)
-
+    
+        while teamcontents == {}:
+            time.sleep(0.5)
+            teamcontents = get_team_contents(link)
+    
+            if teamcontents == None:
+                continue
+    
         if teamcontents == None:
             continue
-
-    if teamcontents == None:
-        continue
-
-    output.append({
-        "link": link,
-        "teams": teamcontents
-    })
-
-# print(json.dumps(output))
-# print(output)
-
-f = open("test.json", "w")
-f.write(json.dumps(output))
-f.close()
-
-# testing
-# print(get_team_contents("https://replay.pokemonshowdown.com/gen81v1-1907362871"))
+    
+        output.append({
+            "link": link,
+            "teams": teamcontents
+        })
+    
+    # print(json.dumps(output))
+    # print(output)
+    
+    f = open("test.json", "w")
+    f.write(json.dumps(output))
+    f.close()
+    
+    # testing
+    # print(get_team_contents("https://replay.pokemonshowdown.com/gen81v1-1907362871"))
