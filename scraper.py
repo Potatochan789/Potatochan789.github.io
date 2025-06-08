@@ -8,7 +8,8 @@ import time
 urlList = [
     "https://www.smogon.com/forums/threads/scl-iv-replays.3750816/",
     "https://www.smogon.com/forums/threads/smogons-official-ladder-tournament-xi-replay-thread.3750361/",
-    "https://www.smogon.com/forums/threads/smogon-premier-league-xvi-replays.3758078/"
+    "https://www.smogon.com/forums/threads/smogon-premier-league-xvi-replays.3758078/",
+    "https://www.smogon.com/forums/threads/the-world-cup-of-pok%C3%A9mon-2025-replays.3763185/"
 ]
 
 def get_team_contents(url: str):
