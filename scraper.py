@@ -82,7 +82,7 @@ def get_all_replay_links(url: str):
             links = soup.find_all("a", href=True)
             
             for link in links:
-                if not ("https://replay.pokemonshowdown.com/smogtours-gen9ou" in link["href"] or "https://replay.pokemonshowdown.com/gen9ou" in link["href"]):
+                if not ("https://replay.pokemonshowdown.com/smogtours-gen9cap" in link["href"] or "https://replay.pokemonshowdown.com/gen9cap" in link["href"]):
                     continue
                 if correct_links.count(link["href"]) > 0:
                     continue
