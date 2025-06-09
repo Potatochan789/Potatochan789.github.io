@@ -6,10 +6,20 @@ import json
 import time
 
 urlList = [
-    "https://www.smogon.com/forums/threads/scl-iv-replays.3750816/",
-    "https://www.smogon.com/forums/threads/smogons-official-ladder-tournament-xi-replay-thread.3750361/",
-    "https://www.smogon.com/forums/threads/smogon-premier-league-xvi-replays.3758078/",
-    "https://www.smogon.com/forums/threads/the-world-cup-of-pok%C3%A9mon-2025-replays.3763185/"
+    "https://www.smogon.com/forums/threads/cappl-x-usage-stats-and-replays-full-stats-18.3745481/",
+    "https://www.smogon.com/forums/threads/capcl-iv-usage-stats-replays.3759396/",
+    "https://www.smogon.com/forums/threads/2025-cap-winter-seasonals-round-1.3760064/",
+    "https://www.smogon.com/forums/threads/2025-cap-winter-seasonal-round-2.3760519/",
+    "https://www.smogon.com/forums/threads/2025-cap-winter-seasonal-round-3-losers-only.3760930/",
+    "https://www.smogon.com/forums/threads/2025-cap-winter-seasonals-round-4.3761285/",
+    "https://www.smogon.com/forums/threads/2025-cap-winter-seasonal-round-5-losers-only.3761674/",
+    "https://www.smogon.com/forums/threads/2025-cap-winter-seasonal-round-6.3762041/",
+    "https://www.smogon.com/forums/threads/2025-cap-winter-seasonals-round-7-losers-only.3762432/",
+    "https://www.smogon.com/forums/threads/2025-cap-winter-seasonal-round-8.3762801/",
+    "https://www.smogon.com/forums/threads/2025-cap-winter-seasonals-round-9-losers-only.3763173/",
+    "https://www.smogon.com/forums/threads/2025-cap-winter-seasonals-round-10.3763517/",
+    "https://www.smogon.com/forums/threads/2025-cap-winter-seasonals-round-11-losers-finals.3763931/",
+    "https://www.smogon.com/forums/threads/2025-cap-winter-seasonals-grand-finals-won-by-lbn.3764235/"
 ]
 
 def get_team_contents(url: str):
