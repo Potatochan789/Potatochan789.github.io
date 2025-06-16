@@ -19,7 +19,8 @@ urlList = [
     "https://www.smogon.com/forums/threads/2025-cap-winter-seasonals-round-9-losers-only.3763173/",
     "https://www.smogon.com/forums/threads/2025-cap-winter-seasonals-round-10.3763517/",
     "https://www.smogon.com/forums/threads/2025-cap-winter-seasonals-round-11-losers-finals.3763931/",
-    "https://www.smogon.com/forums/threads/2025-cap-winter-seasonals-grand-finals-won-by-lbn.3764235/"
+    "https://www.smogon.com/forums/threads/2025-cap-winter-seasonals-grand-finals-won-by-lbn.3764235/",
+    "https://www.smogon.com/forums/threads/cappl-xi-replays.3766192/"
 ]
 
 def get_team_contents(url: str):
