@@ -6,9 +6,9 @@ import json
 import time
 
 urlList = [
-    "https://www.smogon.com/forums/threads/umpl-v-week-3.3772076/",
+    "https://www.smogon.com/forums/threads/umpl-v-week-1.3771392/",
     "https://www.smogon.com/forums/threads/umpl-v-week-2.3771730/",
-    "https://www.smogon.com/forums/threads/umpl-v-week-1.3771392/"
+    "https://www.smogon.com/forums/threads/umpl-v-week-3.3772076/"
 ]
 
 def get_team_contents(url: str):
@@ -95,6 +95,8 @@ tqdm.write(f"Found {len(links)} links")
 
 if len(links) > 0:
     output = []
+
+    links.reverse()
     
     for link in tqdm(links, colour="green", desc="Fetching teams.."):
         teamcontents = get_team_contents(link)
