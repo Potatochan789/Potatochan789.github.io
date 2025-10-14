@@ -6,21 +6,9 @@ import json
 import time
 
 urlList = [
-    "https://www.smogon.com/forums/threads/cappl-x-usage-stats-and-replays-full-stats-18.3745481/",
-    "https://www.smogon.com/forums/threads/capcl-iv-usage-stats-replays.3759396/",
-    "https://www.smogon.com/forums/threads/2025-cap-winter-seasonals-round-1.3760064/",
-    "https://www.smogon.com/forums/threads/2025-cap-winter-seasonal-round-2.3760519/",
-    "https://www.smogon.com/forums/threads/2025-cap-winter-seasonal-round-3-losers-only.3760930/",
-    "https://www.smogon.com/forums/threads/2025-cap-winter-seasonals-round-4.3761285/",
-    "https://www.smogon.com/forums/threads/2025-cap-winter-seasonal-round-5-losers-only.3761674/",
-    "https://www.smogon.com/forums/threads/2025-cap-winter-seasonal-round-6.3762041/",
-    "https://www.smogon.com/forums/threads/2025-cap-winter-seasonals-round-7-losers-only.3762432/",
-    "https://www.smogon.com/forums/threads/2025-cap-winter-seasonal-round-8.3762801/",
-    "https://www.smogon.com/forums/threads/2025-cap-winter-seasonals-round-9-losers-only.3763173/",
-    "https://www.smogon.com/forums/threads/2025-cap-winter-seasonals-round-10.3763517/",
-    "https://www.smogon.com/forums/threads/2025-cap-winter-seasonals-round-11-losers-finals.3763931/",
-    "https://www.smogon.com/forums/threads/2025-cap-winter-seasonals-grand-finals-won-by-lbn.3764235/",
-    "https://www.smogon.com/forums/threads/cappl-xi-replays.3766192/"
+    "https://www.smogon.com/forums/threads/umpl-v-week-3.3772076/",
+    "https://www.smogon.com/forums/threads/umpl-v-week-2.3771730/",
+    "https://www.smogon.com/forums/threads/umpl-v-week-1.3771392/"
 ]
 
 def get_team_contents(url: str):
@@ -83,7 +71,7 @@ def get_all_replay_links(url: str):
             links = soup.find_all("a", href=True)
             
             for link in links:
-                if not ("https://replay.pokemonshowdown.com/smogtours-gen9cap" in link["href"] or "https://replay.pokemonshowdown.com/gen9cap" in link["href"]):
+                if not ("https://replay.pokemonshowdown.com/smogtours-gen9zu" in link["href"] or "https://replay.pokemonshowdown.com/gen9zu" in link["href"]):
                     continue
                 if correct_links.count(link["href"]) > 0:
                     continue
