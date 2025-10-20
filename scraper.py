@@ -8,7 +8,8 @@ import time
 urlList = [
     "https://www.smogon.com/forums/threads/umpl-v-week-1.3771392/",
     "https://www.smogon.com/forums/threads/umpl-v-week-2.3771730/",
-    "https://www.smogon.com/forums/threads/umpl-v-week-3.3772076/"
+    "https://www.smogon.com/forums/threads/umpl-v-week-3.3772076/",
+    "https://www.smogon.com/forums/threads/umpl-v-week-4-for-sale.3772395/"
 ]
 
 def get_team_contents(url: str):
