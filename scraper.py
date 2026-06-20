@@ -6,7 +6,7 @@ import json
 import time
 
 urlList = [
-    "https://www.smogon.com/forums/threads/umpl-v-replays-and-usage-stats.3771911/"
+    "https://www.smogon.com/forums/threads/cappl-xii-replay-and-usage-stats.3783329/"
 ]
 
 def get_team_contents(url: str):
