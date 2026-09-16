@@ -6,8 +6,7 @@ import json
 import time
 
 urlList = [
-    "https://www.smogon.com/forums/threads/cappl-xii-replay-and-usage-stats.3783329/",
-    "https://www.smogon.com/forums/threads/cappl-xii-semifinals.3785216/"
+    "https://www.smogon.com/forums/threads/scl-vi-replays.3787640/"
 ]
 
 def get_team_contents(url: str):
@@ -70,7 +69,7 @@ def get_all_replay_links(url: str):
             links = soup.find_all("a", href=True)
             
             for link in links:
-                if not ("https://replay.pokemonshowdown.com/smogtours-gen9cap" in link["href"] or "https://replay.pokemonshowdown.com/gen9cap" in link["href"]):
+                if not ("https://replay.pokemonshowdown.com/smogtours-gen9ou" in link["href"] or "https://replay.pokemonshowdown.com/gen9ou" in link["href"]):
                     continue
                 if correct_links.count(link["href"]) > 0:
                     continue
